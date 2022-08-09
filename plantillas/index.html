@@ -1,0 +1,82 @@
+{% extends 'base.html'%}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <span>
+                Ingresa la ocupacion de tus padres para que la red neuronal pueda predecir cual podría
+                ser tu porcentaje de satisfacción academica. Esto se logra teniendo en cuenta datos 
+                oficiales de estudiantes colombianos obtenidos en la página de las pruebas SABER.
+            </span><br><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h3 style="text-align: center;">Ingreso de datos:</h3><br>
+            <form action="/analizar" method="POST">
+                <div class="form-group row">
+                    <label for="qualy_Mom" class="col-sm-3 col-form-label">Ocupación de la mamá:</label>
+                    <div class="col-sm-9">
+                        <select name="qualy_Mom" id="" class="form-select form-select-lg mb-3"
+                            aria-label=".form-select-lg example">
+                            <option selected value="0">No sabe</option>
+                            <option value="1">Trabaja en el hogar, no trabaja o estudia</option>
+                            <option value="2">Trabaja como personal de limpieza, mantenimiento, seguridad o construcción
+                            </option>
+                            <option value="3">Es agricultor, pesquero o jornalero</option>
+                            <option value="4">Trabaja por cuenta propia (por ejemplo plomero, electricista)</option>
+                            <option value="5">Es operario de máquinas o conduce vehículos (taxista, chofer)</option>
+                            <option value="6">Pensionado</option>
+                            <option value="7">Es dueño de un negocio pequeño (tiene pocos empleados o no tiene, por
+                                ejemplo
+                                tienda, papelería, etc)</option>
+                            <option value="8">Es vendedor o trabaja en atención al público</option>
+                            <option value="9">Tiene un trabajo de tipo auxiliar administrativo (por ejemplo, secretario
+                                o
+                                asistente)</option>
+                            <option value="10">Trabaja como profesional (por ejemplo médico, abogado, ingeniero)
+                            </option>
+                            <option value="11">Es dueño de un negocio grande, tiene un cargo de nivel directivo o
+                                gerencia
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="qualy_Dad" class="col-sm-3 col-form-label">Ocupación del papá:</label>
+                    <div class="col-sm-9">
+                        <select name="qualy_Dad" id="" class="form-select form-select-lg mb-3"
+                            aria-label=".form-select-lg example">
+                            <option selected value="0">No sabe</option>
+                            <option value="1">Trabaja en el hogar, no trabaja o estudia</option>
+                            <option value="2">Trabaja como personal de limpieza, mantenimiento, seguridad o construcción
+                            </option>
+                            <option value="3">Es agricultor, pesquero o jornalero</option>
+                            <option value="4">Trabaja por cuenta propia (por ejemplo plomero, electricista)</option>
+                            <option value="5">Es operario de máquinas o conduce vehículos (taxista, chofer)</option>
+                            <option value="6">Pensionado</option>
+                            <option value="7">Es dueño de un negocio pequeño (tiene pocos empleados o no tiene, por
+                                ejemplo
+                                tienda, papelería, etc)</option>
+                            <option value="8">Es vendedor o trabaja en atención al público</option>
+                            <option value="9">Tiene un trabajo de tipo auxiliar administrativo (por ejemplo, secretario
+                                o
+                                asistente)</option>
+                            <option value="10">Trabaja como profesional (por ejemplo médico, abogado, ingeniero)
+                            </option>
+                            <option value="11">Es dueño de un negocio grande, tiene un cargo de nivel directivo o
+                                gerencia
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" class="col-sm-2 btn btn-warning" style="margin:auto" value="Analizar">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends 'base.html'%}
+{% block content %}
+<div class="info-cont container">
+    <!--UDISTRITAL-->
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-12 text-information">
+            <h3>Proyecto:</h3>
+            Se busca hacer un aplicativo capaz de hacer predicciones de rendimiento académico basado
+            en factores socio económicos utilizando redes neuronales sobre bases de datos públicas. En el
+            aspecto académico, cuando un estudiante aprende empieza a sentirse bien consigo mismo, a
+            establecer buenas relaciones sociales y a desarrollar la capacidad de enfrentar los desafíos
+            cotidianos para sacar el mayor provecho de las situaciones. Además, la felicidad tiene un
+            significativo efecto positivo en la relación entre los indicadores de selección universitaria y el
+            rendimiento académico.
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+            <img src="{{ url_for('static', filename='images/udistrital.png') }}" />
+        </div>
+    </div>
+    <!--Flask-->
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-12 text-information">
+            <h3>Flask</h3>
+            Flask es un framework minimalista escrito en Python que permite crear aplicaciones web rápidamente
+            y con un mínimo número de líneas de código. Está basado en la especificación WSGI de Werkzeug y el 
+            motor de templates Jinja2 y tiene una licencia BSD.
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+            <img src="{{ url_for('static', filename='images/flask.png') }}" />
+        </div>
+    </div>
+    <!--numpy-->
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-12 text-information">
+            <h3>Numpy</h3>
+            Es una biblioteca para el lenguaje de programación Python que da soporte para
+            crear vectores y matrices grandes multidimensionales, junto con una gran colección de
+            funciones matemáticas de alto nivel.
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+            <img src="{{ url_for('static', filename='images/numpy.png') }}" />
+        </div>
+    </div>
+    <!--Sckit-->
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-12 text-information">
+            <h3>Scikit-Learn</h3>
+            Es una biblioteca con herramientas sencillas y eficaces para el análisis
+            predictivo de datos construida sobre NumPy, SciPy y matplotlib.
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+            <img src="{{ url_for('static', filename='images/scikit.png') }}" />
+        </div>
+    </div>
+    <!--Pandas-->
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-12 text-information">
+            <h3>Pandas</h3>
+            Es una biblioteca de software escrita como extensión de NumPy para
+            manipulación y análisis de datos para el lenguaje de programación Python.
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+            <img src="{{ url_for('static', filename='images/pandas.png') }}" />
+        </div>
+    </div>
+    <!--pingouin-->
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-12 text-information">
+            <h3>Pingouin</h3>
+            Pingouin es un paquete estadístico de código abierto escrito en Python 3 
+            y basado principalmente en Pandas y NumPy. A continuación se enumeran algunas
+            de sus principales características. Para obtener una lista completa de las funciones 
+            disponibles, consulte la documentación de la API.
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+            <img src="{{ url_for('static', filename='images/pingouin.png') }}" />
+        </div>
+    </div>
+    <!--matplotlib-->
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-12 text-information">
+            <h3>Matplotib</h3>
+            Matplotlib es una biblioteca para la generación de gráficos a partir de datos 
+            contenidos en listas o arrays en el lenguaje de programación Python y su extensión 
+            matemática NumPy. Proporciona una API, pylab, diseñada para recordar a la de MATLAB.
+        </div>
+        <div class="col-md-4 col-sm-6 col-12">
+            <img src="{{ url_for('static', filename='images/matplo.png') }}" />
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
