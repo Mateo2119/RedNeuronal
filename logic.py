@@ -54,7 +54,7 @@ class RedNeuronal:
             X_train, X_test, y_train, y_test = train_test_split(self.X,self.puntaje)
             self.mlr = MLPRegressor(solver='lbfgs',alpha=1e-5,hidden_layer_sizes=(3,3),random_state=1)
             self.mlr.fit(X_train,y_train)  
-            if (self.mlr.score(X_train,y_train)>0.70):
+            if (self.mlr.score(X_train,y_train)>0.75):
                 break
         self.puntajeR = self.mlr.score(X_train,y_train)
 

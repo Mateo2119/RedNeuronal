@@ -16,7 +16,7 @@
     <div class="row">
         <div class="col-sm-12">
             <h4 style="text-align: center;">Información de la Red neuronal:</h4>
-            Puntaje de la red neuronal: <span style="color: rgb(218, 196, 0);">{{puntaje}}%</span><br>
+            Puntaje de la red neuronal: <span style="color: rgb(218, 196, 0);">{{puntaje[2:4]}}%</span><br>
             Tamaño de la muestra: <span style="color: rgb(218, 196, 0);">{{corr.iloc[0]['n']}}</span><br>
             Correlación de los datos: <span style="color: rgb(218, 196, 0);">{{corr.iloc[0]['r']}}</span><br>
             Porcentaje de confianza: <span style="color: rgb(218, 196, 0);">{{corr.iloc[0]['CI95%']}}</span><br>
